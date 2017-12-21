@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>firebase Demo</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <style>
+        #app {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        button {
+            display: block;
+            margin: 13px;
+        }
+
+        input{
+            margin: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center"> Firebase Authentication Demo </h1>
+    <hr>
+    <div id="app">
+        <h1 id="userState">TEST</h1>
+        <input type="email" id="txtEmail" placeholder="Enter email" />
+        <br/>
+        <input type="password" id="txtPassword" placeholder="Enter password" />
+        <br/>
+        <button id="btnLogin">Log in</button>
+        <button id="btnLogOut" class="hide">Log Out</button>        
+        <button id="btnSignUp">Sign Up</button>
+        <button id="withFB">Log In with FaceBook</button>
+        <button id="withGithub">Log In with GitHub</button>
+    </div>
+    <div id="errormessage"></div>
+    <div id="results"></div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
